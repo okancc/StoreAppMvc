@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Services"
   ],
-  "SelectedNode": "\\Services",
+  "SelectedNode": "\\Services\\CategoryManager.cs",
   "PreviewInSolutionExplorer": false
 }

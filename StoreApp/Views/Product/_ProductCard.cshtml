@@ -1,0 +1,45 @@
+@model Product
+
+@* <div class="col-sm-12 col-md-4 my-2">
+
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" width="150" height="300" src="@Model?.ImageUrl" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">@Model.ProductName</h5>
+<p class="card-text" id="summary">@Model?.Summary</p>
+<a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Go
+somewhere</a>
+</div>
+</div>
+
+
+</div> *@
+
+<div class="col-sm-12 col-md-4 my-2">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="150" height="300" src="@Model?.ImageUrl" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@Model.ProductName</h5>
+            <p class="card-text" id="summary">
+                @{
+                    int karakterSiniri = 50; // Belirli karakter sınırı
+                    string summary = Model?.Summary;
+                    if (summary != null && summary.Length > karakterSiniri)
+                    {
+                        summary = summary.Substring(0, karakterSiniri) + "...";
+                    }
+                    @summary
+                }
+            </p>
+            <div class="btn btn-group">
+                <a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary"><i
+                        class="fa-solid fa-arrow-right"></i> Go Detail</a>
+                <form id="@Model.ProductId" asp-page="/cart" method="post">
+                    <input type="hidden" asp-for="ProductId" />
+                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                    <button type="submit" class="btn btn-outline-primary"><i class="fa fa-cart-plus"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
