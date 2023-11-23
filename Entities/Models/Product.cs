@@ -13,5 +13,7 @@ public class Product
 
     public int? CategoryId { get; set; }              // Foreign Key
     public Category? Category { get; set; }           // Navigation property
+    public bool ShowCase { get; set; }
+    
 
 }
