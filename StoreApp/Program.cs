@@ -7,7 +7,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 builder.Services.ConfigureDbContext(builder.Configuration);
-builder.Services.ConfigureSession();   
+builder.Services.ConfigureSession();
 builder.Services.ConfigureRepositoryRegistration();
 builder.Services.ConfigureServiceRegistration();
 
@@ -22,6 +22,7 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseEndpoints(endpoints =>
+
 {
     endpoints.MapAreaControllerRoute(
         name: "Admin",
@@ -38,7 +39,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapRazorPages();
 
 });
-
+app.ConfigureAndCheckMigration();
 
 
 app.Run();

@@ -17,9 +17,17 @@ somewhere</a>
 
 <div class="col-sm-12 col-md-4 my-2">
     <div class="card" style="width: 18rem;">
+        <div class="card-header text-center">
+            @Model.ProductName
+        </div>
         <img class="card-img-top" width="150" height="300" src="@Model?.ImageUrl" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">@Model.ProductName</h5>
+            <div class="card-text">
+                <div class="text-danger text-center lead p-2 rounded-2">
+                     @Model?.Price.ToString("C2")
+                </div>
+            </div>
+
             <p class="card-text" id="summary">
                 @{
                     int karakterSiniri = 50; // Belirli karakter sınırı
@@ -31,14 +39,16 @@ somewhere</a>
                     @summary
                 }
             </p>
-            <div class="btn btn-group">
-                <a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary"><i
-                        class="fa-solid fa-arrow-right"></i> Go Detail</a>
-                <form id="@Model.ProductId" asp-page="/cart" method="post">
-                    <input type="hidden" asp-for="ProductId" />
-                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-                    <button type="submit" class="btn btn-outline-primary"><i class="fa fa-cart-plus"></i></button>
-                </form>
+            <div class="d-flex justify-content-center">
+                <div class="btn btn-group">
+                    <a asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId"
+                        class="btn btn-primary rounded-2"><i class="fa-solid fa-arrow-right"></i> Go Detail</a>
+                    <form id="@Model.ProductId" asp-page="/cart" method="post">
+                        <input type="hidden" asp-for="ProductId" />
+                        <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                        <button type="submit" class="btn btn-outline-primary"><i class="fa fa-cart-plus"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

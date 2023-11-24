@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\images\\1.jpeg"
     },
     {
+      "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\10.jpeg",
+      "PackagePath": "staticwebassets\\images\\10.jpeg"
+    },
+    {
       "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\2.jpeg",
       "PackagePath": "staticwebassets\\images\\2.jpeg"
     },
@@ -37,8 +41,8 @@
       "PackagePath": "staticwebassets\\images\\7.jpeg"
     },
     {
-      "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\8.jpeg",
-      "PackagePath": "staticwebassets\\images\\8.jpeg"
+      "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\9.jpeg",
+      "PackagePath": "staticwebassets\\images\\9.jpeg"
     },
     {
       "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\default.jpg",
@@ -49,8 +53,8 @@
       "PackagePath": "staticwebassets\\images\\mih_200 (1).jfif"
     },
     {
-      "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\mih_200.jfif",
-      "PackagePath": "staticwebassets\\images\\mih_200.jfif"
+      "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\oblomov.jpeg",
+      "PackagePath": "staticwebassets\\images\\oblomov.jpeg"
     },
     {
       "Id": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\js\\site.js",

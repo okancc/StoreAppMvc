@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0jyM2pSvB8EJZa0M6AdRAEaZi+SMfbKTm3qHeUVPIJo=",
+  "Hash": "ketpY9a2mr+JKtBNyZDULbI0CCCbGPLh9oS6rkliwK0=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\10.jpeg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/10.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\10.jpeg"
     },
     {
       "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\2.jpeg",
@@ -170,12 +187,12 @@
       "OriginalItemSpec": "wwwroot\\images\\7.jpeg"
     },
     {
-      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\8.jpeg",
+      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\9.jpeg",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
-      "RelativePath": "images/8.jpeg",
+      "RelativePath": "images/9.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,7 +201,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\8.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\9.jpeg"
     },
     {
       "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\default.jpg",
@@ -221,12 +238,12 @@
       "OriginalItemSpec": "wwwroot\\images\\mih_200 (1).jfif"
     },
     {
-      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\mih_200.jfif",
+      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\oblomov.jpeg",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
-      "RelativePath": "images/mih_200.jfif",
+      "RelativePath": "images/oblomov.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,7 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\mih_200.jfif"
+      "OriginalItemSpec": "wwwroot\\images\\oblomov.jpeg"
     },
     {
       "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\js\\site.js",
