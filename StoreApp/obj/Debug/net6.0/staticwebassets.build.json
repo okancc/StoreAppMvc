@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ketpY9a2mr+JKtBNyZDULbI0CCCbGPLh9oS6rkliwK0=",
+  "Hash": "5/VBuTIvzhmZuWPbDhv5k/DlFtGyLEaip0dQD0OcNqs=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -187,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\images\\7.jpeg"
     },
     {
+      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\8.jpg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8.jpg"
+    },
+    {
       "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\9.jpeg",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
@@ -236,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mih_200 (1).jfif"
-    },
-    {
-      "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\images\\oblomov.jpeg",
-      "SourceId": "StoreApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\",
-      "BasePath": "_content/StoreApp",
-      "RelativePath": "images/oblomov.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\oblomov.jpeg"
     },
     {
       "Identity": "C:\\Users\\okanc\\Desktop\\btk-mvc\\Store\\StoreApp\\wwwroot\\js\\site.js",
