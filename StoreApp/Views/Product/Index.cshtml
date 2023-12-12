@@ -1,7 +1,10 @@
 @model IQueryable<Product>
 
 <div class="row">
-      <dlv class="col-md-3">@await Component.InvokeAsync("CategoriesMenu")</dlv>
+      <dlv class="col-md-3">
+            @await Component.InvokeAsync("CategoriesMenu")
+            @await Component.InvokeAsync("ProductFilterMenu")
+      </dlv>
       <dlv class="col-md-9">
             <div class="row my-3">
 
