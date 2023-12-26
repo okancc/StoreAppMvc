@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using Repositories;
 using Repositories.Contracts;
 using Services.Contracts;
+using StoreApp.Models;
 
 
 namespace StoreApp.Contollers
@@ -21,8 +22,18 @@ namespace StoreApp.Contollers
 
         public IActionResult Index(ProductRequestParameters p)
         {
-         var model = _manager.ProductService.GetAllProductsWithDetails(p);
-         return View(model);
+         var products = _manager.ProductService.GetAllProductsWithDetails(p);
+         var pagination = new Pagination()
+         {
+            CurrenPage = p.PageNumber,
+            ItemsPerpage = p.PageSize,
+            TotalItems = _manager.ProductService.GetAllProducts(false).Count() 
+         };
+         return View(new ProductListViewModel()
+         {
+            Products = products,
+            Pagination = pagination
+         });
            
         }
 
