@@ -32,6 +32,16 @@ namespace StoreApp.Infrastructure.Extensions
 
         }
 
+        public static void ConfigureDefaultAdminUser(this IApplicationBuilder app)
+        {
+            const string adminUser = "Admin";
+            const string adminPassword = "Admin+123456";
+
+            // UserManager
+            // RoleManager
+
+        }
+
     }
 
 
