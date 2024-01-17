@@ -50,6 +50,10 @@ namespace StoreApp.Contollers
             await _signInManager.SignOutAsync();
             return Redirect(ReturnUrl);
         }
+        public IActionResult Register()
+        {
+            return View();
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromForm] RegisterDto model)
@@ -63,7 +67,7 @@ namespace StoreApp.Contollers
 
             var result = await _userManager
                 .CreateAsync(user, model.Password);
-            
+
             if (result.Succeeded)
             {
                 var roleResult = await _userManager
@@ -71,14 +75,14 @@ namespace StoreApp.Contollers
 
                 if (roleResult.Succeeded)
                 {
-                    return RedirectToAction("Login");
-                }    
+                    return RedirectToAction("Login", new { ReturnUrl = "/" });
+                }
             }
             else
             {
                 foreach (var err in result.Errors)
                 {
-                    ModelState.AddModelError("",err.Description);
+                    ModelState.AddModelError("", err.Description);
                 }
             }
 
