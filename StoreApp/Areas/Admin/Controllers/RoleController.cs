@@ -17,6 +17,7 @@ namespace StoreApp.Areas.Admin.Controllers
         {
             return View(_manager.AuthService.Roles);
 
+
         }
     }
 
