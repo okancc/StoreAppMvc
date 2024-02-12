@@ -31,8 +31,7 @@ namespace StoreApp.Areas.Admin.Controllers
                     .Roles
                     .Select(r => r.Name)
                     .ToList())
-            }
-            );
+            });
         }
 
         [HttpPost]
@@ -40,10 +39,15 @@ namespace StoreApp.Areas.Admin.Controllers
         public async Task<IActionResult> Create([FromForm] UserDtoForCreation userDto)
         {
             var result = await _manager.AuthService.CreateUser(userDto);
-
             return result.Succeeded
-                  ? RedirectToAction("Index")
-                  : View();
+                ? RedirectToAction("Index")
+                : View();
+        }
+
+        public async Task<IActionResult> Update([FromRoute(Name = "id")] string id)
+        {
+            var user = _manager.AuthService.GetOneUserForUpdate(id);
+            return View(user);
 
         }
     }
