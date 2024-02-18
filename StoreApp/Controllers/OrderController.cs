@@ -1,4 +1,5 @@
 using Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
@@ -15,7 +16,7 @@ namespace StoreApp.Contollers
             _manager = manager;
             _cart = cart;
         }
-
+        [Authorize]
         public ViewResult Checkout() => View(new Order());
 
         [HttpPost]
@@ -26,12 +27,12 @@ namespace StoreApp.Contollers
             {
                 ModelState.AddModelError("", "Sorry, your cart is empty.");
             }
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 order.Lines = _cart.Lines.ToArray();
                 _manager.OrderService.SaveOrder(order);
                 _cart.Clear();
-                return RedirectToPage("/Complete", new {OrderId = order.OrderId});
+                return RedirectToPage("/Complete", new { OrderId = order.OrderId });
             }
             else
             {
